@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-container {
+  text-align: center;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+.task-item {
+  display: flex;
+  border-radius: 5px;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1; 
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.task-content input[type="checkbox"] {
+  transform: scale(1.2); 
+  margin-right: 5px;
+}
+
+.task-content input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px; 
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: pink;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Dark Mode */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #000;
+  --card-bg: white;
+ 
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #fff;
+  --card-bg: #000;
+ 
+}
