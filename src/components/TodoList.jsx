@@ -10,7 +10,7 @@ export default function TodoList() {
   const [editText, setEditText] = useState("");
   const [filter, setFilter] = useState("all");
 
-  const API_URL = "http://127.0.0.1:8000/api/tasks/";
+  const API_URL = "https://pit3-todolist-backend.onrender.com/api/tasks/";
 
   useEffect(() => {
     axios
